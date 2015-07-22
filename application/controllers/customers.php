@@ -11,4 +11,12 @@ class Customers extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
+	public function product()
+	{
+		$this->load->view('product');
+	}
+	public function cart()
+	{
+		$this->load->view('cart');
+	}
 }
