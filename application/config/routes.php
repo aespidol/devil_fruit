@@ -53,9 +53,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'customers';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['product'] = 'customers/product';
+$route['product/(:any)'] = 'customers/product/$1';
 $route['home'] = 'customers/index';
 $route['cart'] = 'customers/cart';
+$route['add_cart'] = 'customers/add_cart';
+$route['delete/(:any)'] = 'customers/delete_cart/$1';
+$route['pay'] = 'customers/pay';
 //admin dashboard
 $route['admin'] = 'admindash/index';
 $route['register'] = 'adminslr/register';
